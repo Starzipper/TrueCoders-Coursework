@@ -1,0 +1,12 @@
+1.Choose a pizza place to order from
+2.Choose type of pizza you want
+3.Call pizza place
+4.Place order for desired pizza
+5.Provide address
+6.Wait
+7.Answer the door
+8.Pay for pizza
+9.Tip 20% for the driver
+10.Consume pizza
+11.Type step 11 for the third time because Microsoft Visual Studio doesn't want to cooperate with you.
+12.I hate this

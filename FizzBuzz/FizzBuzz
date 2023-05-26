@@ -1,0 +1,34 @@
+// public method that accepts a number
+// when the number is divisible by 3 return the word fizz
+// when the number is divisible by 5 return the word buzz
+// when the number is divisible by both, return the word fizzbuzz
+
+static void Main (string[] args)
+{
+    Console.WriteLine("Welcome to the fizzbuzz machine! Please enter a number.");
+    bool isParsable = false;
+    int number = 0;
+    do
+    {
+        var userInput = Console.ReadLine();
+        isParsable = int.TryParse(userInput, out number);
+
+        if (!isParsable)
+        {
+            Console.WriteLine("That is not a valid input. Please enter an integer.");
+        }
+    } while (!isParsable);
+
+    if (number % 3 == 0 && number % 5 == 0)
+    {
+        Console.WriteLine("Fizzbuzz!");
+    }
+    else if (number % 3 == 0)
+    {
+        Console.WriteLine("Fizz!");
+    }
+    else if (number % 5 == 0)
+    {
+        Console.WriteLine("Buzz!");
+    }
+}
